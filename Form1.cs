@@ -30,7 +30,7 @@ namespace CountingVowels
             StringBuilder vowelText = new StringBuilder();
 
             // Check if the textBox has a value, display error if no value
-            if (textBox1 != null)
+            if (!String.IsNullOrEmpty(textBox1.Text))
             {
                 // Append text to totalText stringbuilder
                 totalText.Append(textBox1.Text);
@@ -46,6 +46,22 @@ namespace CountingVowels
                 int vowelCount = textBox2.Text.Length;
                 textBox3.Text = vowelCount.ToString();
             }
+            else
+            {
+                DisplayErrorMessage("Please enter a value in the textbox", "Empty textbox");
+            }
+        }
+
+        private void DisplayErrorMessage(string text, string title)
+        {
+            MessageBox.Show(text, title, MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void clearBtn_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = String.Empty;
+            textBox2.Text = String.Empty;
+            textBox3.Text = String.Empty;
         }
     }
 }
