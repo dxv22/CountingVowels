@@ -52,11 +52,13 @@ namespace CountingVowels
             }
         }
 
+        // Error message when textbox is empty
         private void DisplayErrorMessage(string text, string title)
         {
             MessageBox.Show(text, title, MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
+        // Clear button to reset all values
         private void clearBtn_Click(object sender, EventArgs e)
         {
             textBox1.Text = String.Empty;
