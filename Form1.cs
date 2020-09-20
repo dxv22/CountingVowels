@@ -42,6 +42,9 @@ namespace CountingVowels
 
                 // Add vowel count to textBox 
                 textBox2.Text = vowelText.ToString();
+
+                int vowelCount = textBox2.Text.Length;
+                textBox3.Text = vowelCount.ToString();
             }
         }
     }

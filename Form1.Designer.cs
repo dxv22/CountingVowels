@@ -33,6 +33,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBox1
@@ -64,7 +66,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(141, 290);
+            this.textBox2.Location = new System.Drawing.Point(138, 294);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(59, 20);
@@ -73,17 +75,36 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 293);
+            this.label2.Location = new System.Drawing.Point(9, 297);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(123, 13);
             this.label2.TabIndex = 4;
             this.label2.Text = "Number of vowels in text";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(9, 324);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(123, 13);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Number of vowels in text";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(138, 321);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(59, 20);
+            this.textBox3.TabIndex = 6;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label1);
@@ -103,6 +124,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }
 
